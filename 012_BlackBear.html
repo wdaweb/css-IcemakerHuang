@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bear-face{
+            background: #000;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        /* 腮紅 */
+        .bear-face:before{
+            content: '';
+            background: red;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: -5%;
+            top: 35%;
+        }
+        .bear-face:after{
+            content: '';
+            background: red;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            right: -5%;
+            top:35%;
+        }
+        /* 耳朵 */
+        .bear-ears:before{
+            content: '';
+            background: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 8px solid #000;
+            position: absolute;
+            left: 10%;
+        }
+        .bear-ears:after{
+            content: '';
+            background: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 8px solid #000;
+            position: absolute;
+            right: 10%;
+        }
+        /* 眼睛 */
+        .bear-eyes:before{
+            content: '';
+            background: #000;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 8px solid white;
+            position: absolute;
+            left: 20%;
+            top: 20%;
+        }
+        .bear-eyes:after{
+            content: '';
+            background: #000;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 8px solid white;
+            position: absolute;
+            right: 20%;
+            top: 20%;
+        }
+        .bear-mouth{
+            background: white;
+            width: 100px;
+            height:70px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+            
+        }
+        .bear-mouth:before{
+            content: '';
+            background: #000;
+            width: 25px;
+            height:15px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        .bear-mouth:after{
+            content: '';
+            background: #000;
+            width: 60px;
+            height:25px;
+            border-radius: 50%;
+            position: absolute;
+            bottom:15%;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        /* .bear-V{
+            position: absolute;
+            left: 30%;
+            bottom: 10%;
+        } */
+        .bear-V:before{
+            content: '';
+            position: absolute;
+            left: 35%;
+            bottom: 10%;
+            width: 35px;
+            height: 40px;
+            background:white ;
+            transform: skew(45deg);
+        }
+        .bear-V:after{
+            content: '';
+            position: absolute;
+            right: 35%;
+            bottom: 10%;
+            width: 35px;
+            height: 40px;
+            background:white ;
+            transform: skew(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="bear-face">
+        <div class="bear-ears"></div>
+        <div class="bear-eyes"></div>
+        <div class="bear-mouth"></div>
+        <div class="bear-V"></div>
+    </div>
+
+</body>
+</html>
